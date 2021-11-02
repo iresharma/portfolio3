@@ -15,6 +15,10 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    
+    <!--==================== HashNode Js ====================-->
+    <script defer src="./assets/js/request.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
     <title>Iresharma Singh Portfolio</title>
   </head>
@@ -219,6 +223,21 @@
             </div>
           </div>
         </div>
+      </section>
+      
+      <!--==================== Joke ====================-->
+      <section class="joke container">
+        <div>
+          <h1 class="section__title">
+            Here's a joke for you
+          </h1>
+        </div>
+        <div id="joke" class="section__subtile" style="text-align: center; margin: 1rem 0;">
+          loading...
+        </div>
+        <a onclick="joke()" class="button button--flex">
+          Load More<i class="uil uil-message button__icon"></i>
+        </a>
       </section>
 
       <!--==================== SKILLS ====================-->
@@ -698,15 +717,11 @@
                 <ul class="services__modal-services grid">
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I develop the user interface.</p>
+                    <p>DB migrations or web scraping</p>
                   </li>
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Web page development.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I create ux element interactions.</p>
+                    <p>Arduino or R pi scripting.</p>
                   </li>
                 </ul>
               </div>
@@ -744,15 +759,19 @@
                 <ul class="services__modal-services grid">
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I develop the user interface.</p>
+                    <p>Scalable responsive webpage and webapp development.</p>
                   </li>
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Web page development.</p>
+                    <p>Can do API integrations and write full documentation.</p>
                   </li>
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I create ux element interactions.</p>
+                    <p>I work with multiple technologies mainly: <br />
+                      Vue.js <br />
+                      React <br />
+                      Svelte <br />
+                    </p>
                   </li>
                 </ul>
               </div>
@@ -790,20 +809,46 @@
                 <ul class="services__modal-services grid">
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I develop the user interface.</p>
+                    <p>I write scalable backend services.</p>
                   </li>
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Web page development.</p>
+                    <p>APIs and scripting.</p>
                   </li>
                   <li class="services__modal-service">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>I create ux element interactions.</p>
+                    <p>I work mainly with python[Flask] and Node.js[express.js].</p>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="blog section" id="blog">
+        <div class="left">
+          <h1 class="section__title" id="blog__handle">
+            watchireshstruggle
+          </h1>
+          <span class="section__subtitle" id="blog__tagline">Aayo People</span>
+          <div class="flex__blog-info">
+            <div class="blog__info">
+              <span class="number" id="blog__followers">03</span>
+              <span class="section__subtitle">Followers</span>
+            </div>
+            <div class="blog__info">
+              <span class="number" id="blog__reactions">23</span>
+              <span class="section__subtitle">Reactions</span>
+            </div>
+            <div class="blog__info">
+              <span class="number" id="blog__following">23</span>
+              <span class="section__subtitle">Following</span>
+            </div>
+          </div>
+          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_fGseie.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+        </div>
+        <div class="right">
         </div>
       </section>
 
