@@ -1,0 +1,29 @@
+#follow-blob {
+    height: 150px;
+    aspect-ratio: 1;
+    position: absolute;
+    background: linear-gradient(
+        45deg,
+        var(--first-color-lighter) 0%,
+        var(--first-color-alt) 25%,
+        var(--first-color-lighter) 50%,
+        var(--first-color) 75%,
+        #bc1888 100%
+      );
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 100%;
+    z-index: -1;
+    filter: blur(100px);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 700px) {
+    #follow-blob {
+        display: none;
+    }
+}

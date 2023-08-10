@@ -13,12 +13,15 @@
 
   <!--==================== CSS ====================-->
   <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/images.css" />
 
   <!--==================== HashNode Js ====================-->
   <script defer src="./assets/js/request.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script async src="https://tag.clearbitscripts.com/v1/pk_966e201544d919adfafaca492c76e1be/tags.js"
     referrerpolicy="strict-origin-when-cross-origin"></script>
+    <link rel="stylesheet" href="./assets/css/follow-blob.css">
+    <link rel="stylesheet" href="./assets/css/zen.css">
   <title>Iresharma Portfolio</title>
 </head>
 
@@ -103,27 +106,36 @@
             </div>
 
             <div class="home__img">
-              <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <mask id="mask0" mask-type="alpha">
-                  <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                  <image class="home__blob-img" x="-2" y="0" xlink:href="assets/img/profile.png" />
-                </g>
-              </svg>
+              <div class="card-group" data-index="0" data-status="active">
+                <div class="little-card card">
+        
+                </div>
+                <div class="big-card card">
+        
+                </div>
+                <div class="little-card card">
+        
+                </div>
+                <div class="big-card card">
+        
+                </div>
+                <div class="little-card card">
+        
+                </div>
+                <div class="big-card card">
+        
+                </div>
+                <div class="little-card card">
+        
+                </div>
+                <div class="big-card card">
+        
+                </div>
+            </div>
             </div>
 
             <div class="home__data">
-              <h1 class="home__title">Hi I'm <span>Iresharma</span></h1>
+              <h1 class="home__title">Hi I'm <br><span data-value="Iresharma">Iresharma</span></h1>
               <h3 class="home__subtitle">
                 FullStack Developer and Computer Science enthusiast
               </h3>
@@ -155,12 +167,12 @@
       <div class="about__container container grid">
         <div class="about__data">
           <p class="about__description">
-            I freelance while working as an FullStack Engineer at
-            <a href="www.supertokens.com">
-              <img src="https://supertokens.com/static/webflow/pricing/images/Group-96673x.png" alt=""
-                style="height: 1em;">
-              Supertokens Inc.
-            </a>At times when I am not coding, I like to
+            I freelance while working as an Software Engineer L1 at
+            <a href="www.twilio.com" style="position: relative; margin-left: 1.5em;">
+              <img src="https://cdn.freebiesupply.com/logos/large/2x/twilio-logo-svg-vector.svg" alt=""
+                style="height: 1em; position: absolute; top: .25em; left: -1.25em;">
+              Twilio.
+            </a><br>At times when I am not coding, I like to
           <ul type="none">
             <li><b>Play basketball ⛹🏼‍♂️ </b>,</li>
           </ul>
@@ -197,19 +209,17 @@
       </div>
     </section>
 
-    <!--==================== Joke ====================-->
-    <section class="joke container">
-      <div>
-        <h1 class="section__title">
-          Here's a joke for you
-        </h1>
+    <!--==================== ZEN ART ====================-->
+    <section class="container zen-cont">
+      <div id="zen-wrapper" data-configuration="1" data-roundness="1">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
       </div>
-      <div id="joke" class="section__subtile" style="text-align: center; margin: 1rem 0;">
-        loading...
-      </div>
-      <a onclick="joke()" class="button button--flex">
-        Load More<i class="uil uil-message button__icon"></i>
-      </a>
     </section>
 
     <!--==================== SKILLS ====================-->
@@ -327,6 +337,21 @@
       </div>
     </section>
 
+    <!--==================== Joke ====================-->
+    <section class="joke container">
+      <div>
+        <h1 class="section__title">
+          Here's a joke for you
+        </h1>
+      </div>
+      <div id="joke" class="section__subtile" style="text-align: center; margin: 1rem 0;">
+        loading...
+      </div>
+      <a onclick="joke()" class="button button--flex">
+        Load More<i class="uil uil-message button__icon"></i>
+      </a>
+    </section>
+
     <!--==================== QUALIFICATION ====================-->
     <section class="qualification section">
       <h2 class="section__title">Qualification</h2>
@@ -408,12 +433,33 @@
           <div class="qualification__content" data-content id="work">
 
             <div class="qualification__data">
+              
+
+              <div></div>
+              
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">Software Engineer</h3>
+                <span class="qualification__subtitle">Twilio</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calender"></i>
+                  Sept, 2023- Present
+                </div>
+              </div>
+
+            </div>
+
+            <div class="qualification__data">
               <div>
                 <h3 class="qualification__title">Software Engineer</h3>
                 <span class="qualification__subtitle">Supertokens Inc</span>
                 <div class="qualification__calender">
                   <i class="uil uil-calender"></i>
-                  Nov, 2022- Present
+                  Nov, 2022- Aug, 2023
                 </div>
               </div>
 
@@ -1197,6 +1243,12 @@
   <!--==================== CHECK JS ====================-->
   <script src="./assets/js/check.js"></script>
   <a href="https://clearbit.com">Logos provided by Clearbit</a>
+  
+  <div id="follow-blob" />
+  
+  <script src="./assets/js/follow.js"></script>
+  <script src="./assets/js/zen.js"></script>
+  <script src="./assets/js/hacker.js"></script>
 </body>
 
 </html>

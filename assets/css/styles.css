@@ -309,7 +309,7 @@ img {
   width: 200px;
 }
 
-.nav__logo--gradient {
+.nav__logo--gradient { 
   background: linear-gradient(
     45deg,
     var(--first-color-lighter) 0%,
@@ -330,15 +330,26 @@ img {
   font-size: var(--big-font-size);
 }
 
+@keyframes gradient-pan {
+  from {
+    background-position: 0% center;
+  } 
+  to {
+    background-position: -200% center;
+  }
+}
+
 .home__title--name {
+  animation: gradient-pan 5s linear infinite;
   background: linear-gradient(
     45deg,
     var(--first-color-lighter) 0%,
     var(--first-color-alt) 25%,
     var(--first-color-lighter) 50%,
-    var(--first-color) 75%,
-    #bc1888 100%
+    var(--first-color-alt) 75%,
+    var(--first-color-lighter) 100%
   );
+  background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1191,7 +1202,7 @@ img {
   }
   .home__img {
     order: 1;
-    justify-self: center;
+    /* justify-self: center; */
   }
   .about__data {
     display: flex;
